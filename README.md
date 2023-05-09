@@ -53,10 +53,6 @@ Default Back Office user is
 
 Contributions are always welcome!
 
-Please read the contribution guidelines.
-  * Please ensure your code before push.
-  * Commit message should be meaningful.
-
 ## License
 
 MIT License
