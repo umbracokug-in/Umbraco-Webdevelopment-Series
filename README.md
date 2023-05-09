@@ -12,7 +12,7 @@ This is the  project developed on top of Umbraco version 11.2
 
 ### Contents:
   - [Project Structure](#project-structured)
-      - [.Web ??](#demoumbracoweb)
+      - [.Web 🌐](#demoumbracoweb)
   - [Contribute](#contribute)
   - [License](#license)
 
@@ -61,6 +61,6 @@ Please read the contribution guidelines.
 
 MIT License
 
-## Handled By
+## Managed By
 
- [Kerala Umbraco User Group](https://www.meetup.com/kerala-umbraco-community/) with ??
+ [Kerala Umbraco User Group](https://www.meetup.com/kerala-umbraco-community/) with ❤️
