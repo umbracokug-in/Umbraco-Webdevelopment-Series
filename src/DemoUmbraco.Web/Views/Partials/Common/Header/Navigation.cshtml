@@ -1,0 +1,36 @@
+﻿@using DemoUmbraco.Models;
+@model HomePage;
+@{
+    var navigations = Model.Links;
+}
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+    <div class="container">
+        <a class="navbar-brand" href="@Model.Url()" title="@Model.Name">
+            <img src="/assets/img/navbar-logo.svg" alt="..." />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            Menu
+            <i class="fas fa-bars ms-1"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+
+            <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+
+                <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+
+                @foreach (var item in navigations)
+                {
+                    <li class="nav-item"><a class="nav-link" href="@item.Url">@item.Name</a></li>
+                }
+
+            </ul>
+            
+            
+            <!-- login status section-->
+            @await Html.PartialAsync("Login/LoginStatus")
+            <!-- login status section-->
+            
+            
+        </div>
+    </div>
+</nav>

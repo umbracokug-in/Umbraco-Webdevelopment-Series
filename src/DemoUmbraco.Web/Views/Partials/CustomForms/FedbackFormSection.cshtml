@@ -1,0 +1,26 @@
+﻿@model DemoUmbraco.Models.Models.CustomModels.FormModel;
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<DemoUmbraco.Models.Models.CustomModels.FormModel>
+@using DemoUmbraco.Core.Controller;
+@{
+    <div class="row text-center">
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+            @using (Html.BeginUmbracoForm<DemoSurfaceController>("HandleFormSubmission"))
+            {
+                <div class="mb-3">
+                    @Html.TextBoxFor(m => m.Name, new { @class = "form-control", placeholder = "Name"})
+                </div>
+                <div class="mb-3">
+                    @Html.TextBoxFor(m => m.Phone, new { @class = "form-control", placeholder = "Enter your Phone number" })
+                </div>
+                <div class="mb-3">
+                    @Html.TextBoxFor(m => m.Email, new { @class = "form-control", placeholder = "Enter your Email." })
+                </div>
+                <div class="mb-3">
+                    @Html.TextAreaFor(m => m.Message, new { @class = "form-control", placeholder = "Type your message" })
+                </div>
+                <input class="btn btn-primary btn-login" type="submit" />
+            }
+        </div>
+    </div>
+}

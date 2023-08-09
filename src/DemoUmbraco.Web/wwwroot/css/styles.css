@@ -5400,6 +5400,9 @@ textarea.form-control-lg {
   .modal-xl {
     --bs-modal-width: 800px;
   }
+  .login-status {
+      margin-left: 10px;
+  }
 }
 @media (min-width: 1200px) {
   .modal-xl {

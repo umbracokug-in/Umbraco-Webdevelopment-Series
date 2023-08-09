@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Models\File.generated.cs" />
+    <Compile Remove="Models\Folder.generated.cs" />
+    <Compile Remove="Models\HomePage.generated.cs" />
+    <Compile Remove="Models\Image.generated.cs" />
+    <Compile Remove="Models\MainNav.generated.cs" />
+    <Compile Remove="Models\Member.generated.cs" />
+    <Compile Remove="Models\UmbracoMediaArticle.generated.cs" />
+    <Compile Remove="Models\UmbracoMediaAudio.generated.cs" />
+    <Compile Remove="Models\UmbracoMediaVectorGraphics.generated.cs" />
+    <Compile Remove="Models\UmbracoMediaVideo.generated.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Models\PageModels\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Umbraco.Cms.Core" Version="11.4.2" />
+    <PackageReference Include="Umbraco.Cms.Infrastructure" Version="11.4.2" />
+  </ItemGroup>
+
+</Project>

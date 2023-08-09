@@ -1,3 +1,8 @@
+using DemoUmbraco.Core.Controller;
+using DemoUmbraco.Core.Services;
+using DemoUmbraco.Core.Services.Interfaces;
+using Umbraco.Cms.Web.Website.Controllers;
+
 namespace DemoUmbraco.Web
 {
     public class Startup
@@ -34,6 +39,14 @@ namespace DemoUmbraco.Web
                 .AddWebsite()
                 .AddComposers()
                 .Build();
+
+            services.AddScoped<IPageContentService, PageContentService>();
+
+            // Configure Umbraco Render Controller Type
+            //services.Configure<UmbracoRenderingDefaultsOptions>(c =>
+            //{
+            //    c.DefaultControllerType = typeof(InnerPageController);
+            //});
         }
 
         /// <summary>
@@ -48,7 +61,8 @@ namespace DemoUmbraco.Web
                 app.UseDeveloperExceptionPage();
             }
 
-            app.UseHttpsRedirection();
+            //app.UseHttpsRedirection();
+            app.UseHttpMethodOverride();
 
             app.UseUmbraco()
                 .WithMiddleware(u =>
