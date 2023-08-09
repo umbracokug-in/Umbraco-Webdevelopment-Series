@@ -37,7 +37,6 @@ namespace DemoUmbraco.Core.Controller
         {
             return CurrentTemplate(CurrentPage);
         }
-
         public IActionResult? InnerPageTemplate()
         {
             //Document alias = controller name & Template alias = action name

@@ -50,7 +50,6 @@ namespace DemoUmbraco.Core.Controller
         }
 
 
-
         
         //AllowType - Comma delimited list of allowed member types.
         //AllowGroup - Comma delimited list of allowed member groups.
