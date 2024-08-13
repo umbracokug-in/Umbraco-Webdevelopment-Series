@@ -59,4 +59,4 @@ MIT License
 
 ## Managed By
 
- [Kerala Umbraco User Group](https://www.meetup.com/kerala-umbraco-community/) with ❤️
+ [Umbraco India User Group](https://www.meetup.com/umbraco-india-users-group/) with ❤️
